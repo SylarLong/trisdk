@@ -1,6 +1,6 @@
 {
   "name": "trisdk",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "it's SDK of triones",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -16,6 +16,10 @@
   },
   "author": "sylarlong",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SylarLong/trisdk.git"
+  },
   "devDependencies": {
     "@types/jest": "^27.0.1",
     "jest": "^27.0.6",
