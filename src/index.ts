@@ -16,11 +16,11 @@ class Trisdk implements ITrisdk {
   private tenantId: string;
   private endpoint: string;
 
-  public get currentTenantId() {
+  public get currentTenantId(): string {
     return this.tenantId;
   }
 
-  public get currentEndpoint() {
+  public get currentEndpoint(): string {
     return this.endpoint;
   }
 
@@ -29,7 +29,7 @@ class Trisdk implements ITrisdk {
     this.endpoint = props.endpoint;
   }
 
-  async verifyEndpoint() {
+  async verifyEndpoint(): Promise<boolean> {
     try {
       const result = await got.get(this.endpoint);
       return result.statusCode >= 200 && result.statusCode < 400;
